@@ -10,7 +10,7 @@ Our code is split into frontend and backend. Frontend is in the `web/` directory
 
 After pulling the repo, run `npm install` in the `web/` directory. This will install all packages required. Source code is in the `web/src` directory, and build code will be output to the `web/dist` directory (which is ignored when uploading to git).
 
-Webpack is controlling the build. The config is found at `web/webpack.dev.config.js`. To run a build, use `npm run buildDev`. This will output to the `web/dist` directory, which is where the server grabs files. Webpack will package all javascript into a single `main.js` file.
+Webpack is controlling the build. The config is found at `web/webpack.dev.config.js`. To run a build, use `npm run buildDev` in the `web/` directory. This will output to the `web/dist` directory, which is where the server grabs files. Webpack will package all javascript into a single `main.js` file.
 
 ### Backend
 
