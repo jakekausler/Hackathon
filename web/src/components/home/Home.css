@@ -22,3 +22,13 @@
   cursor: pointer;
   background-color: rgb(180, 180, 180);
 }
+
+.step3 {
+  padding: 20px;
+  display: flex;
+  background: #DDD;
+}
+
+.step3-left, .step3-right {
+  display: inline;
+}

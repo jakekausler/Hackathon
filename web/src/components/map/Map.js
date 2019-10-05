@@ -3,7 +3,7 @@ import map from './map.png';
 
 import './Map.css'
 
-function Map() {
+function MapPanel() {
   return (
     <div className="mapPanel">
       <div className="mapText">
@@ -15,4 +15,4 @@ function Map() {
     );
   }
 
-  export default Map;
+  export default MapPanel;
