@@ -7,6 +7,10 @@
 	justify-content: space-between;
 }
 
+.Footer h1 {
+	text-decoration: underline;
+}
+
 .Footer a, .Footer a:link, .Footer a:visited {
 	color: white;
 	text-decoration: none;

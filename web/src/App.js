@@ -6,12 +6,16 @@ import Step1 from './components/home/step1/Step1';
 import Step2 from './components/home/step2/Step2';
 import Step3 from './components/home/step3/Step3';
 import PointPage from './components/pointPage/PointPage';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 import CreateAccount from './components/account-creation';
 
 import { createStore, combineReducers } from 'redux';
 import { authReducer } from './reducers/authReducer';
 import { Provider } from 'react-redux';
+import { PageDoesNotExist } from './components/common/PageDoesNotExist';
+
 
 const rootReducer = combineReducers({
   auth: authReducer,
@@ -23,6 +27,7 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
+        <Header />
         <Switch>
           <Route path='/step1' component={Step1}/>
           <Route path='/step2' component={Step2}/>
@@ -31,8 +36,10 @@ function App() {
           <Route path='/map' component={Map}/>
           <Route path='/point-page' component={PointPage}/>
           <Route path='/register-options' component={Home}/>
-          <Route path='/' component={Home}/>
+          <Route exact path='/' component={Home}/>
+          <Route path='*' component={PageDoesNotExist}/>
         </Switch>
+        <Footer />
       </BrowserRouter>
     </Provider>
   );

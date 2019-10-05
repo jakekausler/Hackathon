@@ -66,3 +66,8 @@ a.login {
 a.login:hover {
 	background: var(--color_light_orange);
 }
+
+.assembliLogo {
+	display: inline;
+	height: 48px;
+}
