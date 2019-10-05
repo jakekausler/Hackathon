@@ -1,4 +1,11 @@
 {
   "projectName": "Project Name Here",
-  "projectDescription": "some blah here, some blah there. Rich text description area with the ability to add video and photos"
+  "projectDescription": "some blah here, some blah there. Rich text description area with the ability to add video and photos",
+  "assembler": {
+    "id": "0",
+    "name": "Assembler Smith",
+    "imageURL": "https://www.whatsappprofiledpimages.com/wp-content/uploads/2018/07/funny-profile-pic46-300x300.jpg",
+    "phone": "888-888-8888",
+    "website": "https://www.morganhuegel.com"
+  }
 }
