@@ -27,7 +27,9 @@ export default function AssemblerProfile (props) {
               </a>
             </li>
           </ul>
-        </address>        
+        </address>
+
+        <button>Send Message</button>
       </div>
 
     </div>
