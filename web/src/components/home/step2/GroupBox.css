@@ -18,6 +18,10 @@ a.groupbox {
   padding: 1em;
 }
 
+.groupbox:link, .groupbox:visited {
+  color: white;
+}
+
 .groupbox:hover {
   background: var(--color_light_blue);
 }
