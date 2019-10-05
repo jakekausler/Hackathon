@@ -11,6 +11,7 @@
   display: block;
   margin: 0 auto;
 }
+
 .Homepage-button:hover, .Homepage-button:focus {
   cursor: pointer;
   background-color: var(--color_light_orange);
