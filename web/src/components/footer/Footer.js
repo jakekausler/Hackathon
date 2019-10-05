@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Footer.css'
@@ -8,8 +8,21 @@ import twitter from './images/twitter.png'
 import instagram from './images/instagram.png'
 
 function Footer() {
+	const footerRef = useRef();
+	let position;
+	const [footerSpace, setFooterSpace] = useState(0);
+	useEffect(() => {
+		position = footerRef && footerRef.current.getBoundingClientRect();
+		console.log(position);
+		console.log(window.innerHeight);
+		if (position && (position.top < window.innerHeight))
+			setFooterSpace(window.innerHeight - position.top - position.height)
+	}, [])
+	const Space = () => (<div style={{ height: footerSpace }}/>)
 	return (
-		<div className="Footer">
+		<>
+		<Space />
+		<div className="Footer" ref={footerRef} >
 			<div className="footerColumn">
 				<div><h1>Assembl(i)</h1></div>
 				<div><Link to="/description">Description/Mission</Link></div>
@@ -33,6 +46,7 @@ function Footer() {
 				</div>
 			</div>
 		</div>
+		</>
 	)
 }
 
