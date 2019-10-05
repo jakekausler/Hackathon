@@ -6,10 +6,11 @@ import GroupBox from './GroupBox';
 
 export default function Step2() {
   return (
-    <div>
+    <div className="step-box">
       <div>
-        <span className='Step-label'>Step 2</span>
-        <h3>Get Connected</h3>
+        <div className="step-left-label">
+          <h3>Get Connected</h3>
+        </div>
         <p>
           Find your place in a thriving community of servant-hearted
           stewards by indicating your preferred Affinity(i) groups.
