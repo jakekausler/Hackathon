@@ -1,8 +1,10 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-function Header() {
+function Header(props) {
+	const user = props.fullname || 'Create an Account';
 	return (
 		<div className="header">
 			<div className="left">
@@ -21,12 +23,21 @@ function Header() {
 			</div>
 			<div className="right">
 				<div className="accounts">
-					<Link to="/create-account">Create an Account</Link>
-					<Link className="login" to="/login">Login</Link>
+					{ props.fullname ?
+						<div>{props.fullname}</div> :
+						<>
+							<Link to="/create-account">Create an Account</Link>
+							<Link className="login" to="/login">Login</Link>
+						</>
+					}
 				</div>
 			</div>
 		</div>
 	)
 }
 
-export default Header
+const mapStateToProps = state => ({
+	fullname: state.auth.fullname,
+});
+
+export default connect(mapStateToProps)(Header)
