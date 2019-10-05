@@ -1,0 +1,16 @@
+.Footer {
+	margin-top: 12px;
+	background: #999;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footerColumn {
+	display: inline;
+}
+
+.footerMediaIcon {
+	width: 32px;
+	height: 32px;
+}
