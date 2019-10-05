@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="App">
       <Header />
-      <Map />
+      <MapPanel />
       <Step1 />
       <Step2 />
       <Step3 />
