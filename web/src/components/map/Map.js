@@ -1,10 +1,16 @@
 import React from 'react';
 import map from './map.png';
 
+import './Map.css'
+
 function Map() {
   return (
-    <div>
-      <img src={map}/>
+    <div className="mapPanel">
+      <div className="mapText">
+      	<h2>Tag Line</h2>
+      	<p>Add a little bit of body text</p>
+      </div>
+      <img src={map} className="mapImage" />
     </div>
     );
   }
