@@ -9,3 +9,16 @@
   color: white;
   margin-right: 12px;
 }
+
+.Homepage-button {
+  color: white;
+  background-color: rgb(190, 190, 190);
+  border-radius: 0.05em;
+  font-size: 2em;
+  display: block;
+  margin: 0 auto;
+}
+.Homepage-button:hover, .Homepage-button:focus {
+  cursor: pointer;
+  background-color: rgb(180, 180, 180);
+}
