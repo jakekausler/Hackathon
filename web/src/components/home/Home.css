@@ -27,3 +27,9 @@ h1 {
   font-weight: 100;
   display: inline;
 }
+
+.Step-label {
+  border-radius: 1em;
+  border: .1em solid #3fb6f1;
+  padding: .2em;
+}
