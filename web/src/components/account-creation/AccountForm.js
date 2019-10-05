@@ -10,7 +10,7 @@ function AccountForm(props) {
       <Typography variant="h5" gutterBottom>
         Create an Account:
       </Typography>
-      <Grid container spacing={24} >
+      <Grid container >
         <Grid item xs={12} md>
           <Field
             required
