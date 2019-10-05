@@ -20,3 +20,10 @@
 .App-link {
   color: #09d3ac;
 }
+
+h1 {
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 100;
+  display: inline;
+}
