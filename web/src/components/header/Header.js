@@ -21,7 +21,7 @@ function Header() {
 			</div>
 			<div className="right">
 				<div className="accounts">
-					<Link to="/createAccount">Create an Account</Link>
+					<Link to="/create-account">Create an Account</Link>
 					<Link className="login" to="/login">Login</Link>
 				</div>
 			</div>
