@@ -4,6 +4,8 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import UserForm from './UserSignupForm';
 import { Button, Paper } from '@material-ui/core';
 import { registerUser } from '../../actions/authActions';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import muiTheme from '../../theme/muiTheme';
 // import { openToast } from 'src/redux/toast'
 
 const CreateAccountUser = props => {
@@ -21,6 +23,7 @@ const CreateAccountUser = props => {
     props.history.push('/register-options')
   }
   return (
+    <MuiThemeProvider theme={muiTheme}>
     <Paper className={classes.paper}>
       <div className={classes.toolbar} />
       <form id='registration' onSubmit={onSubmit} >
@@ -47,7 +50,8 @@ const CreateAccountUser = props => {
           </Container>
         </Container>
       </form>
-    </Paper>  
+    </Paper>
+    </MuiThemeProvider> 
   );
 }
 

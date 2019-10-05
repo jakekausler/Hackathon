@@ -7,7 +7,7 @@ export default function GroupBox(props) {
   return (
     <a href={"/" + props.title} className='groupbox'><div>
       <div className='icon'><img src={props.iconurl} /></div>      
-      <p>{props.title}</p>
+      <p className="groupbox-header">{props.title}</p>
       <p>{props.description}</p>
     </div></a>
   );
