@@ -25,7 +25,16 @@ a.groupbox {
 .groupbox .icon {
   border-radius: 50%;
   background-color: var(--color_dark_orange);
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   margin: 0 auto;
+  position: relative;
+}
+
+.groupbox .icon img {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  top: 12.5%;
+  left: 12.5%;
 }

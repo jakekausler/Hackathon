@@ -1,5 +1,5 @@
 import React from 'react';
-import map from './map.png';
+import map from './map.svg';
 
 import './Map.css'
 
