@@ -17,16 +17,16 @@ const About = ( props ) => {
             <section>
                 <form action="" method="post">
                     <div>
-                        <label htmlFor="fName">First Name</label>
-                        <input type="text" name="fName" id="fName"/>
+                        <span><b>Leadership555</b></span>
                     </div>
                     <div>
-                        <label htmlFor="lName">Last Name</label>
-                        <input type="text" name="lName" id="lName"/>
+                        <span>000 Leadership Way</span>
                     </div>
                     <div>
-                        <label htmlFor="email">Email</label>
-                        <input type="text" name="email" id="email"/>
+                        <span>Leadership, New York, USA</span>
+                    </div>
+                    <div>
+                        <span>+1 (000)-000-0000</span>
                     </div>
                 </form>
             </section>
