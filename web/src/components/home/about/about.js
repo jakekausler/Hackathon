@@ -1,7 +1,7 @@
 import React from 'react';
-import './about.css';
+import './About.css';
 
-const about = ( props ) => {
+const About = ( props ) => {
     return (
         <div className="About">
             <h3>About Assembl(i)</h3>
@@ -33,3 +33,5 @@ const about = ( props ) => {
         </div>
     )
 }
+
+export default About
