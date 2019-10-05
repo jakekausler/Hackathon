@@ -2,18 +2,11 @@
   text-align: center;
 }
 
-.Step-label {
-  border-radius: 1em;
-  background: purple;
-  padding: .4em;
-  color: white;
-  margin-right: 12px;
-}
-
 .Homepage-button {
   color: white;
-  background-color: rgb(190, 190, 190);
+  background-color: var(--color_dark_orange);
   border-radius: 0.05em;
+  border-color: var(--color_dark_orange);
   font-size: 2em;
   display: block;
   margin: 0 auto;
@@ -21,37 +14,34 @@
 
 .Homepage-button:hover, .Homepage-button:focus {
   cursor: pointer;
-  background-color: rgb(180, 180, 180);
+  background-color: var(--color_light_orange);
 }
 
-.step3 {
-  padding: 20px;
+.step-box {
+  padding: 10px;
+}
+.step-box-accent {
+  background: var(--color_dark_blue);
+  color: white;
+}
+.step-box-accent h3 {
+  color: var(--color_dark_orange);
+}
+
+.step-columns {
   display: flex;
-  background: #DDD;
 }
-
-.step3-left, .step3-right {
+.step-left, .step-right {
   display: inline;
+  padding: 10px;
+}
+.step-image {
+  width: 100%;
 }
 
-.Step-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background: #DDD;
+.step-left-label {
+  text-align: left;
 }
-
-.Step-img-wrap {
-  flex: 1 1 200px;
-}
-
-.Step-img-wrap>img {
-  height: auto;
-  width: auto;
-  max-width: 70%;
-}
-
-.Step-text {
-  flex: 1 1 500px;
+.step-right-label {
+  text-align: right;
 }

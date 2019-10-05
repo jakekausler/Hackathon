@@ -10,16 +10,21 @@
   margin-bottom: 20px;
 }
 
-.groupbox {
+a.groupbox {
   flex-basis: 25%;
-  background-color: rgb(220, 220, 220);
+  background: var(--color_dark_blue);
+  color: white;
   text-align: center;
   padding: 1em;
 }
 
+.groupbox:hover {
+  background: var(--color_light_blue);
+}
+
 .groupbox .icon {
   border-radius: 50%;
-  background-color: purple;
+  background-color: var(--color_dark_orange);
   width: 40px;
   height: 40px;
   margin: 0 auto;
