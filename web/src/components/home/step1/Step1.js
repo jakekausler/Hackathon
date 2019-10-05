@@ -4,19 +4,22 @@ import image from '../images/filler.png'
 
 export default function Step1() {
   return (
-      <div className='Step-container'>
-        <div className='Step-img-wrap'>
-          <img src={image}/>
-        </div>
-        <div className='Step-text'>
-          <span className='Step-label'>Step 1</span>
-          <h3>Get Inspired</h3>
-          <p>
-            Learn about our assemblers.. who they are and the kind of high impact
-            BBunch of textBunch of textBunch of textBunch of textBunch of textunch of text
-            Bunch of textBunch of textBunch of textBunch of textBunch of text
-          </p>
-          <button className='Homepage-button'>Learn More</button>
+      <div>
+        <div className="step-columns step-box step-box-accent">
+          <div className="step-left">
+            <img className="step-image" src={image}/>
+          </div>
+          <div className="step-right">
+            <div className="step-right-label">
+              <h3>Get Inspired</h3>
+            </div>
+            <p>
+              Learn about our assemblers.. who they are and the kind of high impact
+              BBunch of textBunch of textBunch of textBunch of textBunch of textunch of text
+              Bunch of textBunch of textBunch of textBunch of textBunch of text
+            </p>
+            <button className="Homepage-button">Learn More</button>
+          </div>
         </div>
       </div>
   );

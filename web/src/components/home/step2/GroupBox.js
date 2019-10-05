@@ -5,10 +5,10 @@ import './GroupBox.css';
 export default function GroupBox(props) {
   //props = {Title, Description}
   return (
-    <div className='groupbox'>
-      <div className='icon'></div>      
+    <a href={"/" + props.title} className='groupbox'><div>
+      <div className='icon'><img src={props.iconurl} /></div>      
       <p>{props.title}</p>
       <p>{props.description}</p>
-    </div>
+    </div></a>
   );
 }

@@ -1,9 +1,15 @@
 .Footer {
 	margin-top: 12px;
-	background: #999;
+	background: var(--color_dark_gray);
+	color: white;
 	padding: 20px 30px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.Footer a, .Footer a:link, .Footer a:visited {
+	color: white;
+	text-decoration: none;
 }
 
 .footerColumn {
