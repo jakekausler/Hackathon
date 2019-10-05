@@ -6,7 +6,3 @@ pids
 *.pid
 *.seed
 *.pid.lock
-
-# Dependency directories
-web/node_modules/
-web/dist/
