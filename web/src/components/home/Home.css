@@ -18,6 +18,7 @@
   display: block;
   margin: 0 auto;
 }
+
 .Homepage-button:hover, .Homepage-button:focus {
   cursor: pointer;
   background-color: rgb(180, 180, 180);
@@ -31,4 +32,26 @@
 
 .step3-left, .step3-right {
   display: inline;
+}
+
+.Step-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #DDD;
+}
+
+.Step-img-wrap {
+  flex: 1 1 200px;
+}
+
+.Step-img-wrap>img {
+  height: auto;
+  width: auto;
+  max-width: 70%;
+}
+
+.Step-text {
+  flex: 1 1 500px;
 }
