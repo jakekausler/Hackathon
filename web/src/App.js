@@ -1,13 +1,21 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/home/Home';
 import Map from './components/map/Map';
+import Step1 from './components/home/step1/Step1';
+import Step2 from './components/home/step2/Step2';
+import Step3 from './components/home/step3/Step3';
 
 function App() {
   return (
     <BrowserRouter>
-      <Route path='/map' component={Map}/>
-      <Route path='/' component={Home}/>
+      <Switch>
+        <Route path='/step1' component={Step1}/>
+        <Route path='/step2' component={Step2}/>
+        <Route path='/step3' component={Step3}/>
+        <Route path='/map' component={Map}/>
+        <Route path='/' component={Home}/>
+      </Switch>
     </BrowserRouter>
   );
 }
