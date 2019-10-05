@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './Home.css';
+
+import Header from './../header/Header'
+import Footer from '../footer/Footer'
+import MapPanel from './../map/Map'
+import Step1 from './step1/Step1'
+import Step2 from './step2/Step2'
+import Step3 from './step3/Step3'
+// import About from './about/About'
 
 function Home() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Map />
+      <Step1 />
+      <Step2 />
+      <Step3 />
+      {/* <About />*/}
+      <Footer />
     </div>
   );
 }
