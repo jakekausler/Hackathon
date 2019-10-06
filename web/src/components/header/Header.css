@@ -33,6 +33,7 @@ h1 {
 }
 
 .header table {
+	display: block;
 	border: none;
 	border-collapse: collapse;
 }
