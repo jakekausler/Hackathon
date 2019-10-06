@@ -36,7 +36,7 @@ function Footer(props) {
 		<div className="Footer" ref={footerRef} >
 			<div className="footerColumn">
 				<div><h1>Assembl(i)</h1></div>
-				<div><Link to="/description">Description/Mission</Link></div>
+				<div><Link to="/description">Description / Mission</Link></div>
 				<div><Link to="/statement">Statement</Link></div>
 			</div>
 			<div className="footerColumn">

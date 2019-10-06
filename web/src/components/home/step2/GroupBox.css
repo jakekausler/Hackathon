@@ -10,7 +10,20 @@
   margin-bottom: 20px;
 }
 
-a.groupbox {
+@media (max-width: 767px) {
+  .groupbox-row1, .groupbox-row2 {
+    flex-direction: column;
+  }
+  .groupbox-row1 {
+    margin-bottom: 0;
+  }
+  a.groupbox, a.groupbox:link, a.groupbox:visited {
+    color: black;
+    background: white;
+  }
+}
+
+.groupbox {
   flex-basis: 25%;
   background: var(--color_dark_blue);
   color: white;

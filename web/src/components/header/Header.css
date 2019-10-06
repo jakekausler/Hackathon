@@ -71,3 +71,13 @@ h1 {
 	display: inline;
 	height: 48px;
 }
+
+@media (max-width: 767px) {
+	.assembliLogo {
+		height: 32px;
+	}
+	.header .login {
+		display: block;
+		float: right;
+	}
+}

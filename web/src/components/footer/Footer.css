@@ -19,9 +19,17 @@
 
 .footerColumn {
 	display: inline;
+	width: 30%;
+	word-wrap: break-word;
 }
 
 .footerMediaIcon {
 	height: 32px;
 	margin: 2px;
+}
+@media (max-width: 767px) {
+	.footerMediaIcon {
+		height: 20px;
+		margin: 4px;
+	}
 }
