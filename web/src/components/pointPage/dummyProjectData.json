@@ -1,6 +1,8 @@
 {
   "projectName": "Project Name Here",
-  "projectDescription": "Some blah here, some blah there. Rich text description area with the ability to add video and photos",
+  "projectDescription": "some blah here, some blah there. Rich text description area with the ability to add video and photos",
+  "imageURL": "/img/project.png",
+  "neededGroups": ["prayer", "story", "funding", "equipping"],
   "assembler": {
     "id": "0",
     "name": "Assembler Smith",
