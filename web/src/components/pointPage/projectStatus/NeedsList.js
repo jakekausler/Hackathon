@@ -1,8 +1,5 @@
 import React from 'react';
 
-import checked from "../../../images/checked.png"
-import unchecked from "../../../images/unchecked.png"
-
 export default function NeedsList(props) {
   let metNeeds = []
   let unmetNeeds = []
@@ -11,14 +8,14 @@ export default function NeedsList(props) {
     if(need.fulfilled) {
       metNeeds.push(
         <li key={'need' + i}>
-          <img src={checked} />  {/*<---- CUSTOM LIST ICON HERE*/}
+          <img src="/img/checked.png" />  {/*<---- CUSTOM LIST ICON HERE*/}
           {need.position}
         </li>
       )
     } else {
       unmetNeeds.push(
         <li key={'need' + i}>
-          <img src={unchecked} />  {/*<---- CUSTOM LIST ICON HERE*/}
+          <img src="/img/unchecked.png" />  {/*<---- CUSTOM LIST ICON HERE*/}
           {need.position}
         </li>
       )

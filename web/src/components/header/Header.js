@@ -3,14 +3,12 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import assembliLogo from '../../images/assembliLogoNoTagline.png'
-
 function Header(props) {
 	const user = props.fullname || 'Create an Account';
 	return (
 		<div className="header">
 			<div className="left">
-				<Link to="/"><img className="assembliLogo" src={assembliLogo} /></Link>
+				<Link to="/"><img className="assembliLogo" src="/img/assembliLogoNoTagline.png" /></Link>
 				<table className="links"><tbody><tr>
 				<td>
 					<Link to="/projectSearch">Project Search</Link>

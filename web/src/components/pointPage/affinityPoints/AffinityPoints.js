@@ -4,33 +4,26 @@ import './AffinityPoints.css'
 
 import AffinityPoint from './AffinityPoint'
 
-import prayer from './../../../images/prayer.png'
-import story from './../../../images/story.png'
-import innovation from './../../../images/innovation.png'
-import funding from './../../../images/funding.png'
-import logistics from './../../../images/logistics.png'
-import equipping from './../../../images/equipping.png'
-
 export default function AffinityPoints () {
 	let affinityPoints = data.affinityPoints.map(function(point) {
 		switch (point.type) {
 		case "prayer":
-			point.iconurl = prayer;
+			point.iconurl = "/img/prayer.png";
 			break;
 		case "story":
-			point.iconurl = story;
+			point.iconurl = "/img/story.png";
 			break;
 		case "innovation":
-			point.iconurl = innovation;
+			point.iconurl = "/img/innovation.png";
 			break;
 		case "funding":
-			point.iconurl = funding;
+			point.iconurl = "/img/funding.png";
 			break;
 		case "logistics":
-			point.iconurl = logistics;
+			point.iconurl = "/img/logistics.png";
 			break;
 		case "equipping":
-			point.iconurl = equipping;
+			point.iconurl = "/img/equipping.png";
 			break;
 		}
 		return <AffinityPoint Point={point} />;

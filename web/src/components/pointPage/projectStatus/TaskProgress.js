@@ -1,8 +1,5 @@
 import React from 'react';
 
-import checked from "../../../images/checked.png"
-import unchecked from "../../../images/unchecked.png"
-
 export default function TaskProgress (props) {
   return (
     <div className='task-progress'>
@@ -11,8 +8,8 @@ export default function TaskProgress (props) {
         {props.data.projectStatus.tasks.map( (task, i) => {
           return task.completed ?
           //Replace these span characters with checked or unchecked boxes
-            <li key={'task' + i}><img src={checked} />{task.title}</li> :
-            <li key={'task' + i}><img src={unchecked} />{task.title}</li>
+            <li key={'task' + i}><img src="/img/checked.png" />{task.title}</li> :
+            <li key={'task' + i}><img src="/img/unchecked.png" />{task.title}</li>
         })}
       </ul>      
     </div>

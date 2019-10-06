@@ -3,11 +3,6 @@ import { Link } from 'react-router-dom';
 
 import './Footer.css'
 
-import facebook from './../../images/FACEBOOK.png'
-import twitter from './../../images/TWITTER.png'
-import instagram from './../../images/INSTAGRAM.png'
-
-
 function Footer(props) {
 	const footerRef = useRef();
 	const [footerSpace, setFooterSpace] = useState(0);
@@ -51,9 +46,9 @@ function Footer(props) {
 				<div><Link to="/phone">Phone</Link></div>
 				<div><Link to="/email">Email</Link></div>
 				<div className="footerMediaIcons">
-					<a href="https://facebook.com"><img className="footerMediaIcon" src={facebook} /></a>
-					<a href="https://twitter.com"><img className="footerMediaIcon" src={twitter} /></a>
-					<a href="https://instagram.com"><img className="footerMediaIcon" src={instagram} /></a>
+					<a href="https://facebook.com"><img className="footerMediaIcon" src="/img/FACEBOOK.png" /></a>
+					<a href="https://twitter.com"><img className="footerMediaIcon" src="/img/TWITTER.png" /></a>
+					<a href="https://instagram.com"><img className="footerMediaIcon" src="/img/INSTAGRAM.png" /></a>
 				</div>
 			</div>
 		</div>
