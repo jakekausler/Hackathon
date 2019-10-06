@@ -1,7 +1,9 @@
 import React from 'react'
 
+import './SavedAssembliPoints.css'
+
 export default function SavedAssembliPoints() {
 	return (
-		<div></div>
+		<div className="UserPageSection SavedAssembliPoints"></div>
 	);
 }

@@ -1,0 +1,24 @@
+.UserPage {
+	display: flex;
+}
+
+.UserPage .main {
+	text-align: left;
+	flex: 3;
+}
+
+.UserPage .side {
+	text-align: left;
+	flex: 1;
+}
+
+.UserPageSection {
+	padding: 
+}
+
+@media (max-width: 767px) {
+	.UserPage {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
