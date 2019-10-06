@@ -15,7 +15,6 @@ const About = ( props ) => {
                     mollit anim id est laborum.
                 </p>
             <section>
-                <form action="" method="post">
                     <div>
                         <span><b>Leadership555</b></span>
                     </div>
@@ -28,7 +27,6 @@ const About = ( props ) => {
                     <div>
                         <span>+1 (000)-000-0000</span>
                     </div>
-                </form>
             </section>
         </div>
     )
