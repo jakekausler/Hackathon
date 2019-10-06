@@ -37,7 +37,7 @@ export default class ProjectManagement extends Component {
 	  	return <TeamPreview Team={t} />
 	  })
 	  return (
-	  	<div className="ProjectManagement">
+	  	<div className="ProjectManagement Point-page-section">
 		    <h3>Project Management</h3>
 		    	<div className="tabs">
 					<table className="links"><tbody><tr>

@@ -9,7 +9,7 @@ import TaskProgress from './TaskProgress';
 export default function ProjectStatus () {
   return (
     <div className='Point-page-section'>
-      <h3>Project Status:</h3>
+      <h3>Project Status</h3>
       <NeedsList data={data}/>
       <div className='goal-progress'>
         <FundingGoal data={data}/>
