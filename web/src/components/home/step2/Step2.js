@@ -26,15 +26,15 @@ export default function Step2() {
 
       <div className='groupbox-container'>
         <div className='groupbox-row1'>
-          <GroupBox title='Prayer' description='description / bullets' iconurl={prayer} />
-          <GroupBox title='Story' description='description / bullets' iconurl={story} />
-          <GroupBox title='Innovation' description='description / bullets' iconurl={innovation} />          
+          <GroupBox title='Prayer' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed turpis tincidunt id aliquet. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Vulputate mi sit amet mauris commodo quis imperdiet. Massa ultricies mi quis hendrerit dolor magna eget est. Molestie nunc non blandit massa enim nec dui.' iconurl={prayer} />
+          <GroupBox title='Story' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed turpis tincidunt id aliquet. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Vulputate mi sit amet mauris commodo quis imperdiet. Massa ultricies mi quis hendrerit dolor magna eget est. Molestie nunc non blandit massa enim nec dui.' iconurl={story} />
+          <GroupBox title='Innovation' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed turpis tincidunt id aliquet. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Vulputate mi sit amet mauris commodo quis imperdiet. Massa ultricies mi quis hendrerit dolor magna eget est. Molestie nunc non blandit massa enim nec dui.' iconurl={innovation} />          
         </div>
 
         <div className='groupbox-row2'>
-          <GroupBox title='Funding' description='description / bullets' iconurl={funding} />
-          <GroupBox title='Logistics' description='description / bullets' iconurl={logistics} />
-          <GroupBox title='Equipping' description='description / bullets' iconurl={equipping} />
+          <GroupBox title='Funding' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed turpis tincidunt id aliquet. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Vulputate mi sit amet mauris commodo quis imperdiet. Massa ultricies mi quis hendrerit dolor magna eget est. Molestie nunc non blandit massa enim nec dui.' iconurl={funding} />
+          <GroupBox title='Logistics' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed turpis tincidunt id aliquet. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Vulputate mi sit amet mauris commodo quis imperdiet. Massa ultricies mi quis hendrerit dolor magna eget est. Molestie nunc non blandit massa enim nec dui.' iconurl={logistics} />
+          <GroupBox title='Equipping' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed turpis tincidunt id aliquet. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Vulputate mi sit amet mauris commodo quis imperdiet. Massa ultricies mi quis hendrerit dolor magna eget est. Molestie nunc non blandit massa enim nec dui.' iconurl={equipping} />
         </div>
       </div>
 

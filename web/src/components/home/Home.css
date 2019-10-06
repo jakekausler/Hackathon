@@ -19,6 +19,7 @@
 
 .step-box {
   padding: 10px;
+  text-align: justify;
 }
 .step-box-accent {
   background: var(--color_dark_blue);
@@ -27,16 +28,11 @@
 .step-box-accent h3 {
   color: var(--color_dark_orange);
 }
-
-.step-columns {
-  display: flex;
-}
-.step-left, .step-right {
-  display: inline;
-  padding: 10px;
-}
 .step-image {
-  width: 100%;
+  float: left;
+  width: 50%;
+  height: 50%;
+  margin: 10px;
 }
 
 .step-left-label {
