@@ -7,17 +7,28 @@ import facebook from './images/facebook.png'
 import twitter from './images/twitter.png'
 import instagram from './images/instagram.png'
 
-function Footer() {
+
+function Footer(props) {
 	const footerRef = useRef();
-	let position;
 	const [footerSpace, setFooterSpace] = useState(0);
-	useEffect(() => {
-		position = footerRef && footerRef.current.getBoundingClientRect();
-		console.log(position);
-		console.log(window.innerHeight);
-		if (position && (position.top < window.innerHeight))
-			setFooterSpace(window.innerHeight - position.top - position.height)
-	}, [])
+	const calculateSpace = () => {
+		const position = footerRef && footerRef.current.getBoundingClientRect();
+		if (!position)
+			return;
+		if (((position.top + position.height) < window.innerHeight)) {
+			// Push down the footer when its not at the bottom of screen
+			const outputSpace = window.innerHeight - (position.top + position.height);
+			if(footerSpace !== outputSpace) {
+				setFooterSpace(outputSpace)
+			}
+		}
+
+		// Reset Footer extra footer offset to zero
+		else if ((position.top > window.innerHeight) && footerSpace !== 0 ) {
+			setFooterSpace(0);
+		}
+	}
+	useEffect(calculateSpace)
 	const Space = () => (<div style={{ height: footerSpace }}/>)
 	return (
 		<>

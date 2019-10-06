@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/home/Home';
 import Map from './components/map/Map';
@@ -15,6 +15,7 @@ import { createStore, combineReducers } from 'redux';
 import { authReducer } from './reducers/authReducer';
 import { Provider } from 'react-redux';
 import { PageDoesNotExist } from './components/common/PageDoesNotExist';
+import { withRouter } from 'react-router';
 
 
 const rootReducer = combineReducers({
@@ -23,10 +24,22 @@ const rootReducer = combineReducers({
 
 const store = createStore(rootReducer)
 
-function App() {
+const RootApp = () => {
   return (
-    <Provider store={store}>
-      <BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <AppWithRouter />
+        </BrowserRouter>
+      </Provider>
+  )
+}
+
+export default RootApp;
+
+class App extends React.Component {
+  render() {
+    return (
+      <>
         <Header />
         <Switch>
           <Route path='/step1' component={Step1}/>
@@ -40,9 +53,9 @@ function App() {
           <Route path='*' component={PageDoesNotExist}/>
         </Switch>
         <Footer />
-      </BrowserRouter>
-    </Provider>
-  );
+      </>
+    );
+  }
 }
 
-export default App;
+const AppWithRouter = withRouter(App);
