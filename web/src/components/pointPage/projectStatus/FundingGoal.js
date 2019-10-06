@@ -13,7 +13,7 @@ export default function FundingGoal (props) {
   } catch (e) {
     //I'm not entirely sure if navigator.language will always 
     //produce a valid locale code, so use USD as a fall-back
-    console.log(e)
+    console.error('Caught error in FundingGoal component:', e)
     formatter = new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
@@ -22,7 +22,7 @@ export default function FundingGoal (props) {
   }
 
   return (
-    <div>
+    <div className='funding-goal'>
       <h4>Funding Goal</h4>
       <p>
         <span>

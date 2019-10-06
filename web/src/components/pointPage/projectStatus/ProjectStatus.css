@@ -1,6 +1,7 @@
 .needs-list {
   display: flex;
   flex-direction: row;
+  background-color: rgb(245, 245, 245);
 }
 
 .needs-list ul {
@@ -13,8 +14,24 @@
 }
 
 .needs-list .needs-fulfilled {
-  border-right: 1px solid gray;
 }
 .needs-list .needs-unfulfilled {
-  padding-left: 10px;
+  
+}
+
+.task-progress ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goal-progress {
+  display: flex;
+  background-color: rgb(245, 245, 245);
+  margin-top: 10px;
+}
+.task-progress {
+  flex-basis: 50%;
+}
+.funding-goal {
+  flex-basis: 50%;
 }
