@@ -17,7 +17,7 @@ const AffinityPage = props => {
     const form = { prayer, innovation, equipping, story, funding, logistics }
     console.log(form);
     updateAffinity(form);
-    props.history.push('/map')
+    props.history.push('/profile-settings');
   }
   return (
     <Paper className={classes.paper}>

@@ -16,6 +16,7 @@ import Footer from './components/footer/Footer';
 
 import CreateAccount from './components/account-creation';
 import AffinityPage from './components/find-your-place';
+import ProfileSettings from './components/profile-settings';
 
 import { authReducer } from './reducers/authReducer';
 import { settingsReducer } from './reducers/settingsReducer';
@@ -55,6 +56,7 @@ class App extends React.Component {
           <Route path='/step3' component={Step3}/>
           <Route path='/create-account' component={CreateAccount}/>
           <Route path='/register-affinity' component={AffinityPage}/>
+          <Route path='/profile-settings' component={ProfileSettings}/>
           <Route path='/map' component={Map}/>
           <Route path='/point-page' component={PointPage}/>
           <Route path='/user-page' component={UserPage}/>
