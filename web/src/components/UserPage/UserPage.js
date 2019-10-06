@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux';
 
+import data from './dummyProjectData.json'
 import './UserPage.css'
 
 import ActiveAssembliPoints from './ActiveAssembliPoints/ActiveAssembliPoints'
@@ -15,9 +16,9 @@ export default function UserPage(props) {
 			<h2>Hello [User]</h2>
 			<div className="MainUserPage">
 			<div className="main">
-				<ActiveAssembliPoints />
-				<SavedAssembliPoints />
-				<AssembliPointInfo />
+				<ActiveAssembliPoints Active={data.active} />
+				<SavedAssembliPoints Saved={data.saved} />
+				<AssembliPointInfo Urgent={data.urgent} Suggested={data.suggested} />
 				<Invite />
 			</div>
 			<div className="side">
