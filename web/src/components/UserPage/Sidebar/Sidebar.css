@@ -1,0 +1,7 @@
+.undecorated {
+    list-style: none;
+}
+
+.filled {
+    list-style: disc;
+}
