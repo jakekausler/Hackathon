@@ -42,7 +42,7 @@ const ProfileSettings = props => {
     props.updateProfile(profile);
     props.updateAvailability(avail);
     props.updateWorkPreferences(workPref);
-    props.history.push('/map');
+    props.history.push('/registration-complete');
   }
   return (
     <Paper className={classes.paper}>

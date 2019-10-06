@@ -7,12 +7,14 @@ import muiTheme from './theme/muiTheme';
 import Home from './components/home/Home';
 import PointPage from './components/pointPage/PointPage';
 import UserPage from './components/UserPage/UserPage';
+import UserProfile from './components/UserProfile/UserProfile.js'
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 import CreateAccount from './components/account-creation';
 import AffinityPage from './components/find-your-place';
 import ProfileSettings from './components/profile-settings';
+import RegistrationComplete from './components/registration-complete';
 
 import { authReducer } from './reducers/authReducer';
 import { settingsReducer } from './reducers/settingsReducer';
@@ -50,9 +52,9 @@ class App extends React.Component {
           <Route path='/create-account' component={CreateAccount}/>
           <Route path='/register-affinity' component={AffinityPage}/>
           <Route path='/profile-settings' component={ProfileSettings}/>
-          <Route path='/map' component={Map}/>
           <Route path='/point-page' component={PointPage}/>
           <Route path='/user-page' component={UserPage}/>
+          <Route path='/registration-complete' component={RegistrationComplete}/>
           {/* <Route path='/profile/:id' component={UserProfile}/> */}
           <Route exact path='/' component={Home}/>
           <Route path='*' component={PageDoesNotExist}/>

@@ -16,7 +16,7 @@ const CreateAccountUser = props => {
   const [cpassword, setcpassword] = useState('');
   const onSubmit = e => {
     e.preventDefault();
-    const form = { fname, lname, email, password, cpassword }
+    const form = { fname, lname, email, password, cpassword, country }
     props.registerUser(form);
     console.log(form)
     props.history.push('/register-affinity')
