@@ -15,20 +15,9 @@ const About = ( props ) => {
                     mollit anim id est laborum.
                 </p>
             <section>
-                <form action="" method="post">
-                    <div>
-                        <label htmlFor="fName">First Name</label>
-                        <input type="text" name="fName" id="fName"/>
-                    </div>
-                    <div>
-                        <label htmlFor="lName">Last Name</label>
-                        <input type="text" name="lName" id="lName"/>
-                    </div>
-                    <div>
-                        <label htmlFor="email">Email</label>
-                        <input type="text" name="email" id="email"/>
-                    </div>
-                </form>
+                <div className="companyContact">
+                    <h4></h4>
+                </div>
             </section>
         </div>
     )
