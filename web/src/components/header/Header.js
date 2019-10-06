@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 function Header(props) {
-	const user = props.fullname || 'Create an Account';
 	return (
 		<div className="header">
 			<div className="left">
@@ -24,7 +23,7 @@ function Header(props) {
 			<div className="right">
 				<div className="accounts">
 					{ props.fullname ?
-						<div>{props.fullname}</div> :
+					  <Link to='/user-page'>{props.fullname}</Link> :
 						<>
 							<Link to="/create-account">Create an Account</Link>
 							<Link className="login" to="/login">Login</Link>

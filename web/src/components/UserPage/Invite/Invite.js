@@ -17,6 +17,8 @@ export default function Invite() {
 				</div>
 				<button type="submit" id="sendInvite">Send</button>
 			</form>
+
+
 		</div>
 	);
 }
