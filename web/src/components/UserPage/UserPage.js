@@ -13,6 +13,7 @@ export default function UserPage(props) {
 	return (
 		<div className="UserPage">
 			<h2>Hello [User]</h2>
+			<div className="MainUserPage">
 			<div className="main">
 				<ActiveAssembliPoints />
 				<SavedAssembliPoints />
@@ -21,6 +22,7 @@ export default function UserPage(props) {
 			</div>
 			<div className="side">
 				<Sidebar />
+			</div>
 			</div>
 		</div>
 	);
