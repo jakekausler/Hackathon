@@ -1,5 +1,6 @@
 .MainUserPage {
 	display: flex;
+	flex-direction: column;
 }
 
 .UserPage h2 {
@@ -7,9 +8,8 @@
 }
 
 .UserPage .main {
-	width: 75%;
+	width: 100%;
 	text-align: left;
-	border-right: 1px solid var(--color_dark_blue);
 }
 
 .UserPage .side {
@@ -25,13 +25,6 @@
 
 .UserPageSection {
 	padding: 20px;
-}
-
-@media (max-width: 767px) {
-	.UserPage {
-		display: flex;
-		flex-direction: column-reverse;
-	}
 }
 
 .AssembliPointInfo .urgent, .AssembliPointInfo .suggested {
