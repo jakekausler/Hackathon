@@ -4,16 +4,74 @@
 			"prayer",
 			"story",
 			"innovation",
-			"equipping"
+			"logistics"
 		],
 		"name": "Create a new church"
+	}, {
+		"points": [
+			"story",
+			"equipping"
+		],
+		"name": "Create a new church 2"
+	}, {
+		"points": [
+			"prayer",
+			"funding"
+		],
+		"name": "Create a new church 3"
+	}, {
+		"points": [
+			"prayer",
+			"story",
+			"innovation",
+			"funding",
+			"equipping"
+		],
+		"name": "Create a new church 4"
+	}, {
+		"points": [
+			"prayer",
+			"story",
+			"innovation"
+		],
+		"name": "Create a new church 5"
 	}],
 	"saved": [{
 		"points": [
+			"prayer",
+			"story",
 			"innovation",
+			"logistics"
+		],
+		"name": "Create a new church"
+	}, {
+		"points": [
+			"story",
+			"equipping"
+		],
+		"name": "Create a new church 2"
+	}, {
+		"points": [
+			"prayer",
 			"funding"
 		],
-		"name": "Finish Assembl(i)"
+		"name": "Create a new church 3"
+	}, {
+		"points": [
+			"prayer",
+			"story",
+			"innovation",
+			"funding",
+			"equipping"
+		],
+		"name": "Create a new church 4"
+	}, {
+		"points": [
+			"prayer",
+			"story",
+			"innovation"
+		],
+		"name": "Create a new church 5"
 	}],
 	"urgent": [{
 		"name": "An Urgent Need!",

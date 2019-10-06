@@ -7,9 +7,9 @@ export default function Sidebar() {
 		<div className="Sidebar">
 			<div>
 				<ul>
-					<li className="undecorated"><a href="#">Messages ({})</a></li>
-					<li className="undecorated"><a href="#">Invites ({})</a></li>
-					<li className="undecorated"><a href="#">Projects ({})</a></li>
+					<li className="undecorated"><a href="#">Messages&nbsp;&nbsp;&nbsp;( {4} )</a></li>
+					<li className="undecorated"><a href="#">Invites&nbsp;&nbsp;&nbsp;( {1} )</a></li>
+					<li className="undecorated"><a href="#">Projects&nbsp;&nbsp;&nbsp;( {3} )</a></li>
 				</ul>
 			</div>
 			<div>
