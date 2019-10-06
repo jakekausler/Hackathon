@@ -1,0 +1,20 @@
+.needs-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.needs-list ul {
+  list-style: none;
+  padding: 0;
+  flex-basis: 50%;
+}
+.needs-list li {
+  padding-left: 10px;
+}
+
+.needs-list .needs-fulfilled {
+  border-right: 1px solid gray;
+}
+.needs-list .needs-unfulfilled {
+  padding-left: 10px;
+}
