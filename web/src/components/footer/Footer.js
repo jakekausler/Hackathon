@@ -26,7 +26,10 @@ function Footer(props) {
   }
 
   useEffect(calculatePosition)
-  window.addEventListener('resize', calculatePosition)
+  useEffect(() => {
+		window.addEventListener('resize', calculatePosition);
+		return window.removeEventListener('resize', calculatePosition);
+	}, [])
   
   let conditionalStyles =
     fixedToBottom ?
