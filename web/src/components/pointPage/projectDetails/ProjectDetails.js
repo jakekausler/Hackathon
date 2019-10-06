@@ -1,11 +1,17 @@
 import React from 'react';
-import data from '../dummyProjectData.json'
+import AssembliPoint from '../../assembli-point/AssembliPoint';
 
-export default function ProjectDetails () {
+export default function ProjectDetails(props) {
   return (
-  	<div className="Point-page-section">
-    	<h3>Project Details</h3>
-    	<p>{data.projectDescription}</p>
-    </div>
-  )
+    <>
+      <h2>{props.name}</h2>
+      <div style={{width: '50%'}}>
+        <AssembliPoint img={props.profileImg} groups={props.groups}/>
+      </div>
+      <div>
+        <p><b>Description:</b></p>
+        <p>{props.description}</p>
+      </div>
+    </>
+  );
 }

@@ -5,10 +5,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import muiTheme from './theme/muiTheme';
 import Home from './components/home/Home';
-import Map from './components/map/Map';
-import Step1 from './components/home/step1/Step1';
-import Step2 from './components/home/step2/Step2';
-import Step3 from './components/home/step3/Step3';
 import PointPage from './components/pointPage/PointPage';
 import UserPage from './components/UserPage/UserPage';
 import Header from './components/header/Header';
@@ -51,15 +47,13 @@ class App extends React.Component {
       <>
         <Header />
         <Switch>
-          <Route path='/step1' component={Step1}/>
-          <Route path='/step2' component={Step2}/>
-          <Route path='/step3' component={Step3}/>
           <Route path='/create-account' component={CreateAccount}/>
           <Route path='/register-affinity' component={AffinityPage}/>
           <Route path='/profile-settings' component={ProfileSettings}/>
           <Route path='/map' component={Map}/>
           <Route path='/point-page' component={PointPage}/>
           <Route path='/user-page' component={UserPage}/>
+          {/* <Route path='/profile/:id' component={UserProfile}/> */}
           <Route exact path='/' component={Home}/>
           <Route path='*' component={PageDoesNotExist}/>
         </Switch>

@@ -1,0 +1,16 @@
+.Invite label {
+    display: block;
+}
+
+.Invite form {
+    margin-top: 40px;
+}
+
+.Invite button {
+	background: var(--color_dark_orange);
+	border: none;
+	padding: 8px;
+	color: white;
+	width: 100px;
+	cursor: pointer;
+}
