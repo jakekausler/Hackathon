@@ -15,6 +15,7 @@ export default function Recommendations() {
         <div className="Recommendations">
         	{recommendations}
         </div>
+        </div>
     );
 
 }
