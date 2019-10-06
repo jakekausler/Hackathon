@@ -23,16 +23,16 @@ function Footer(props) {
 			}
 		}
 
-		// Reset Footer extra footer offset to zero
+		// Reset Footer extra offset to zero
 		else if ((position.top > window.innerHeight) && footerSpace !== 0 ) {
 			setFooterSpace(0);
 		}
 	}
 	useEffect(calculateSpace)
-	const Space = () => (<div style={{ height: footerSpace }}/>)
+	const ConditionalSpace = () => (<div style={{ height: footerSpace }}/>)
 	return (
 		<>
-		<Space />
+		<ConditionalSpace />
 		<div className="Footer" ref={footerRef} >
 			<div className="footerColumn">
 				<div><h1>Assembl(i)</h1></div>
