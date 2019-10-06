@@ -1,7 +1,6 @@
 .needs-list {
   display: flex;
   flex-direction: row;
-  background-color: var(--color_light_blue);
   margin-top: 10px;
   padding: 0px 10px;
 }
@@ -28,7 +27,6 @@
 
 .goal-progress {
   display: flex;
-  background-color: var(--color_light_blue);
 }
 .task-progress {
   flex-basis: 50%;

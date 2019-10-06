@@ -2,12 +2,12 @@ import React from 'react';
 import '../Home.css';
 import './GroupBox.css';
 
-import prayer from './../images/prayer.png'
-import story from './../images/story.png'
-import innovation from './../images/innovation.png'
-import funding from './../images/funding.png'
-import logistics from './../images/logistics.png'
-import equipping from './../images/equipping.png'
+import prayer from './../../../images/prayer.png'
+import story from './../../../images/story.png'
+import innovation from './../../../images/innovation.png'
+import funding from './../../../images/funding.png'
+import logistics from './../../../images/logistics.png'
+import equipping from './../../../images/equipping.png'
 
 import GroupBox from './GroupBox';
 

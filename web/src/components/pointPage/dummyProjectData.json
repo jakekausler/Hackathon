@@ -8,6 +8,46 @@
     "phone": "888-888-8888",
     "website": "https://www.morganhuegel.com"
   },
+  "affinityPoints": [{
+    "type": "prayer",
+    "needs": [
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
+    ],
+    "users": [{
+      "name": "David Wallace"
+    }, {
+      "name": "Ryan Howard"
+    }, {
+      "name": "Jan Levinson"
+    }],
+    "spaceAvailable": false
+  }, {
+    "type": "equipping",
+    "needs": [
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
+    ],
+    "users": [{
+      "name": "Kevin Malone"
+    }],
+    "spaceAvailable": true
+  }, {
+    "type": "logistics",
+    "needs": [
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
+    ],
+    "users": [{
+      "name": "Creed Bratton"
+    }, {
+      "name": "Meredith Palmer"
+    }],
+    "spaceAvailable": true
+  }],
   "messages": [{
   	"from": "Michael Scott",
   	"subject": "URGENT: Email Fowards!",
