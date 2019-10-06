@@ -4,7 +4,7 @@ import './Message.css'
 
 export default function Message() {
     return (
-        <div className="Message">
+        <div className="profileSection Message">
             <h3>Message {}</h3>
             <form action="" method="post">
                 <div className="msgContainer">
@@ -15,6 +15,7 @@ export default function Message() {
                     <label htmlFor="msgContent">Message</label>
                     <textarea name="msgContent" id="msgContent" cols="30" rows="5"></textarea>
                 </div>
+                <button type="submit" id="sendInvite">Send</button>
             </form>
         </div>
     );

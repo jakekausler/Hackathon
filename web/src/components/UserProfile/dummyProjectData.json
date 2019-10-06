@@ -1,0 +1,105 @@
+{
+	"name": "Jake Kausler",
+	"country": "USA",
+	"languages": [
+		"English",
+		"Spanish",
+		"Hindi"
+	],
+	"website": "https://www.johnsmith.com",
+	"skills": [
+		"Church Planting",
+		"Microsoft Excel",
+		"Beat Boxing"
+	],
+	"availability": "9am to 9pm, Sunday-Thursday EST",
+	"workPreferences": "Remote",
+	"experience": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+	"activeAssembli": [{
+		"points": [
+			"prayer",
+			"story",
+			"innovation",
+			"logistics"
+		],
+		"name": "Create a new church"
+	}, {
+		"points": [
+			"story",
+			"equipping"
+		],
+		"name": "Create a new church 2"
+	}, {
+		"points": [
+			"prayer",
+			"funding"
+		],
+		"name": "Create a new church 3"
+	}, {
+		"points": [
+			"prayer",
+			"story",
+			"innovation",
+			"funding",
+			"equipping"
+		],
+		"name": "Create a new church 4"
+	}, {
+		"points": [
+			"prayer",
+			"story",
+			"innovation"
+		],
+		"name": "Create a new church 5"
+	}],
+	"completedAssembli": [{
+		"points": [
+			"prayer",
+			"story",
+			"innovation",
+			"logistics"
+		],
+		"name": "Create a new church"
+	}, {
+		"points": [
+			"story",
+			"equipping"
+		],
+		"name": "Create a new church 2"
+	}, {
+		"points": [
+			"prayer",
+			"funding"
+		],
+		"name": "Create a new church 3"
+	}, {
+		"points": [
+			"prayer",
+			"story",
+			"innovation",
+			"funding",
+			"equipping"
+		],
+		"name": "Create a new church 4"
+	}, {
+		"points": [
+			"prayer",
+			"story",
+			"innovation"
+		],
+		"name": "Create a new church 5"
+	}],
+	"recommendations": [{
+		"from": "Hunter Raymond",
+		"recommendation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	}, {
+		"from": "Clark Green",
+		"recommendation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	}, {
+		"from": "Pete Miller",
+		"recommendation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	}, {
+		"from": "Erin Hannon",
+		"recommendation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	}]
+}

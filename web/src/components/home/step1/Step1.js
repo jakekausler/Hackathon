@@ -3,8 +3,8 @@ import '../Home.css';
 
 export default function Step1() {
   return (
-      <div>
-        <div className="step-box step-box-accent">
+      <div className="step-box step-box-accent">
+        <div>
           <div className="step-right-label">
             <h3>Get Inspired</h3>
           </div>

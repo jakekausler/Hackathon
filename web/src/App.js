@@ -7,7 +7,7 @@ import muiTheme from './theme/muiTheme';
 import Home from './components/home/Home';
 import PointPage from './components/pointPage/PointPage';
 import UserPage from './components/UserPage/UserPage';
-import UserProfile from './components/UserProfile/UserProfile.js'
+import UserProfile from './components/UserProfile/UserProfile';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
@@ -46,7 +46,7 @@ export default RootApp;
 class App extends React.Component {
   render() {
     return (
-      <>
+      <div style={{minHeight: '100vh', boxSizing: 'border-box'}} id='app-container'>
         <Header />
         <Switch>
           <Route path='/create-account' component={CreateAccount}/>
@@ -55,12 +55,13 @@ class App extends React.Component {
           <Route path='/point-page' component={PointPage}/>
           <Route path='/user-page' component={UserPage}/>
           <Route path='/registration-complete' component={RegistrationComplete}/>
+          <Route path='/user-profile' component={UserProfile}/>
           {/* <Route path='/profile/:id' component={UserProfile}/> */}
           <Route exact path='/' component={Home}/>
           <Route path='*' component={PageDoesNotExist}/>
         </Switch>
         <Footer />
-      </>
+      </div>
     );
   }
 }
