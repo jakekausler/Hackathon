@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function ProjectDetails () {
   return (
-    <p>Project Details</p>
+  	<div className="Point-page-section">
+    	<h3>Project Details</h3>
+    </div>
   )
 }

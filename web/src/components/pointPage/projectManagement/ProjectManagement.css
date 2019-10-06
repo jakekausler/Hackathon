@@ -44,13 +44,13 @@
 
 .message, .file, .team {
 	border-bottom: 1px solid black;
+	padding: 10px;
 	cursor: pointer;
 }
 
 .message .from, .file .name, .team .name {
-	margin-top: 12px;
 }
 
-.message .subject, .message .content, .file .name, .file .description, .team .name, .team .description {
+.message .subject, .file .name, .team .name {
 	margin-bottom: 12px;
 }
