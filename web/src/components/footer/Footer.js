@@ -53,9 +53,9 @@ function Footer(props) {
 				<div><Link to="/phone">Phone</Link></div>
 				<div><Link to="/email">Email</Link></div>
 				<div className="footerMediaIcons">
-					<a href="https://facebook.com"><img className="footerMediaIcon" src="/img/FACEBOOK.png" /></a>
-					<a href="https://twitter.com"><img className="footerMediaIcon" src="/img/TWITTER.png" /></a>
-					<a href="https://instagram.com"><img className="footerMediaIcon" src="/img/INSTAGRAM.png" /></a>
+					<a href="https://facebook.com"><img className="footerMediaIcon" src="/img/FACEBOOK.png" alt='facebook icon'/></a>
+					<a href="https://twitter.com"><img className="footerMediaIcon" src="/img/TWITTER.png" alt='twitter icon'/></a>
+					<a href="https://instagram.com"><img className="footerMediaIcon" src="/img/INSTAGRAM.png" alt='instagram icon'/></a>
 				</div>
 			</div>
 		</footer>
