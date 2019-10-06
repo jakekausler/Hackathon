@@ -22,7 +22,7 @@ export const updateWorkPreferences = dispatch => form => {
 
 export const updateAvailability = dispatch => form => {
   dispatch({
-    type: 'UPDATE_AVAILABLILITY',
+    type: 'UPDATE_AVAILABILITY',
     payload: form
   })
 }
