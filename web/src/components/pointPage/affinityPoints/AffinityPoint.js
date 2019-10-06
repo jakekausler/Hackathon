@@ -15,7 +15,7 @@ export default function AffinityPoint (props) {
 	return (
   		<div className="affinityPoint">
     		<div className="affinityPointHeading">
-    			<div className='icon'><img src={props.Point.iconurl} /></div>
+    			<div className='icon'><img src={props.Point.iconurl} alt='icon'/></div>
     			<h4>{props.Point.type[0].toUpperCase() + props.Point.type.slice(1)}</h4>
     		</div>
     		<p>We need these things:</p>

@@ -13,7 +13,7 @@ function ProfileForm(props) {
     phone, setPhone,
     occupation, setOccupation,
     experience, setExperience,
-    base64Image, setBase64Image,
+    //base64Image, setBase64Image,
   } = props.form;
   return (
     <>

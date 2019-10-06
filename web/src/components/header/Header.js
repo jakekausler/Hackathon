@@ -7,7 +7,7 @@ function Header(props) {
 	return (
 		<div className="header">
 			<div className="left">
-				<Link to="/"><img className="assembliLogo" src="/img/assembliLogoNoTagline.png" /></Link>
+				<Link to="/"><img className="assembliLogo" src="/img/assembliLogoNoTagline.png" alt='Assembli Logo'/></Link>
 				<table className="links"><tbody><tr>
 				<td>
 					<Link to="/projectSearch">Project Search</Link>
