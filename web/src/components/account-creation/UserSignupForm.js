@@ -15,9 +15,10 @@ function UserForm(props) {
     password, setpassword,
     cpassword, setcpassword,
     email, setemail,
+    country, setcountry,
   } = props.form;
   return (
-    <div style={props.style}>
+    <>
       <Typography variant="h5" gutterBottom>
         Create an Account
       </Typography>
@@ -26,40 +27,48 @@ function UserForm(props) {
       </Typography>
       <Grid container >
       <Grid item xs={12} md={12}>
-          <IconButton>
-            <Avatar>
-              <AccountCircle />
-            </Avatar>
-          </IconButton>
+        <IconButton>
+          <Avatar>
+            <AccountCircle />
+          </Avatar>
+        </IconButton>
         </Grid> 
-        <Grid item xs={12} md={6} style={styles.padding}>
+        <Grid item xs={12} md={6} lg={4} style={styles.padding}>
          <FormControl margin="normal" required fullWidth>
-                <InputLabel htmlFor="fname">First Name</InputLabel>
-                <Input value={fname} onChange={e => setfname(e.target.value)} id="fname" name="fname" autoComplete="fname" autoFocus={props.visible?true:false} />
+            <InputLabel htmlFor="fname">First Name</InputLabel>
+            <Input value={fname} onChange={e => setfname(e.target.value)} id="fname" name="fname" autoComplete="fname" autoFocus={props.visible?true:false} />
           </FormControl>
         </Grid>
-        <Grid item xs={12} md={6} style={styles.padding}>
+        <Grid item xs={12} md={6} lg={4} style={styles.padding}>
           <FormControl margin="normal" required fullWidth>
           <InputLabel htmlFor="lname">Last Name</InputLabel>
-                <Input value={lname} onChange={e => setlname(e.target.value)} id="lname" name="lastname" autoComplete="lname" />
+            <Input value={lname} onChange={e => setlname(e.target.value)} id="lname" name="lastname" autoComplete="lname" />
           </FormControl>
         </Grid>
-        <Grid item xs={12} md={6} style={styles.padding}>
+        <Grid item xs={12} md={6} lg={4} style={styles.padding}>
           <FormControl margin="normal" required fullWidth>
-                <InputLabel htmlFor="email">Email Address</InputLabel>
-                <Input value={email} onChange={e => setemail(e.target.value)} id="email" name="email" autoComplete="email" />
+            <InputLabel htmlFor="country">Country</InputLabel>
+            <Input value={country} onChange={e => setcountry(e.target.value)} id="country" name="country" autoComplete="country" />
           </FormControl>
         </Grid>
-        <Grid item xs={12} md={6} style={styles.padding}>
-        <FormControl margin="normal" required fullWidth>
-            <InputLabel htmlFor="password">Password</InputLabel>
-            <Input
-              value={password} onChange={e => setpassword(e.target.value)}
-              name="password"
-              type="password"
-              id="password"
-            />
+        <Grid item xs={12} md={6} lg={4} style={styles.padding}>
+          <FormControl margin="normal" required fullWidth>
+            <InputLabel htmlFor="email">Email Address</InputLabel>
+            <Input value={email} onChange={e => setemail(e.target.value)} id="email" name="email" autoComplete="email" />
           </FormControl>
+        </Grid>
+        <Grid item xs={12} md={6} lg={4} style={styles.padding}>
+        <FormControl margin="normal" required fullWidth>
+          <InputLabel htmlFor="password">Password</InputLabel>
+          <Input
+            value={password} onChange={e => setpassword(e.target.value)}
+            name="password"
+            type="password"
+            id="password"
+          />
+          </FormControl>
+        </Grid>
+        <Grid item xs={12} md={6} lg={4} style={styles.padding}>
           <FormControl margin="normal" required fullWidth >
             <InputLabel htmlFor="cpassword">Confirm Password</InputLabel>
             <Input
@@ -71,7 +80,7 @@ function UserForm(props) {
           </FormControl>
         </Grid>      
       </Grid>
-    </div>
+    </>
   );
 }
 

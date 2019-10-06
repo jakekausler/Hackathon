@@ -44,7 +44,7 @@ function Footer(props) {
 				<div><Link to="/">Home</Link></div>
 				<div><Link to="/about">About</Link></div>
 				<div><Link to="/contact">Contact</Link></div>
-				<div><Link to="https://www.lead555.com/">Lead555</Link></div>
+				<div><a href="https://www.lead555.com/">Lead555</a></div>
 			</div>
 			<div className="footerColumn">
 				<div><h1>STAY IN TOUCH</h1></div>

@@ -4,8 +4,6 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import UserForm from './UserSignupForm';
 import { Button, Paper } from '@material-ui/core';
 import { registerUser } from '../../actions/authActions';
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-import muiTheme from '../../theme/muiTheme';
 // import { openToast } from 'src/redux/toast'
 
 const CreateAccountUser = props => {
@@ -13,6 +11,7 @@ const CreateAccountUser = props => {
   const [fname, setfname] = useState('');
   const [lname, setlname] = useState('');
   const [email, setemail] = useState('');
+  const [country, setcountry] = useState('');
   const [password, setpassword] = useState('');
   const [cpassword, setcpassword] = useState('');
   const onSubmit = e => {
@@ -20,12 +19,10 @@ const CreateAccountUser = props => {
     const form = { fname, lname, email, password, cpassword }
     props.registerUser(form);
     console.log(form)
-    props.history.push('/register-options')
+    props.history.push('/register-affinity')
   }
   return (
-    <MuiThemeProvider theme={muiTheme}>
     <Paper className={classes.paper}>
-      <div className={classes.toolbar} />
       <form id='registration' onSubmit={onSubmit} >
         <Container classes={classes.container}>
           <UserForm
@@ -33,6 +30,7 @@ const CreateAccountUser = props => {
               fname, setfname,
               lname, setlname,
               email, setemail,
+              country, setcountry,
               password, setpassword,
               cpassword, setcpassword,
             }}
@@ -51,7 +49,6 @@ const CreateAccountUser = props => {
         </Container>
       </form>
     </Paper>
-    </MuiThemeProvider> 
   );
 }
 

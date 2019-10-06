@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { createStore, combineReducers } from 'redux';
+import { withRouter } from 'react-router';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import muiTheme from './theme/muiTheme';
 import Home from './components/home/Home';
 import Map from './components/map/Map';
 import Step1 from './components/home/step1/Step1';
@@ -10,16 +14,17 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 import CreateAccount from './components/account-creation';
+import AffinityPage from './components/find-your-place';
 
-import { createStore, combineReducers } from 'redux';
 import { authReducer } from './reducers/authReducer';
+import { settingsReducer } from './reducers/settingsReducer';
 import { Provider } from 'react-redux';
 import { PageDoesNotExist } from './components/common/PageDoesNotExist';
-import { withRouter } from 'react-router';
 
 
 const rootReducer = combineReducers({
   auth: authReducer,
+  settings: settingsReducer,
 });
 
 const store = createStore(rootReducer)
@@ -27,9 +32,11 @@ const store = createStore(rootReducer)
 const RootApp = () => {
   return (
       <Provider store={store}>
-        <BrowserRouter>
-          <AppWithRouter />
-        </BrowserRouter>
+        <MuiThemeProvider theme={muiTheme}>
+          <BrowserRouter>
+            <AppWithRouter />
+          </BrowserRouter>
+        </MuiThemeProvider>
       </Provider>
   )
 }
@@ -46,9 +53,9 @@ class App extends React.Component {
           <Route path='/step2' component={Step2}/>
           <Route path='/step3' component={Step3}/>
           <Route path='/create-account' component={CreateAccount}/>
+          <Route path='/register-affinity' component={AffinityPage}/>
           <Route path='/map' component={Map}/>
           <Route path='/point-page' component={PointPage}/>
-          <Route path='/register-options' component={Home}/>
           <Route exact path='/' component={Home}/>
           <Route path='*' component={PageDoesNotExist}/>
         </Switch>
