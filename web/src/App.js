@@ -45,7 +45,7 @@ export default RootApp;
 class App extends React.Component {
   render() {
     return (
-      <>
+      <div style={{minHeight: '100vh', boxSizing: 'border-box'}} id='app-container'>
         <Header />
         <Switch>
           <Route path='/create-account' component={CreateAccount}/>
@@ -60,7 +60,7 @@ class App extends React.Component {
           <Route path='*' component={PageDoesNotExist}/>
         </Switch>
         <Footer />
-      </>
+      </div>
     );
   }
 }

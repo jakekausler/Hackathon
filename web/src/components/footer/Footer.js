@@ -4,31 +4,38 @@ import { Link } from 'react-router-dom';
 import './Footer.css'
 
 function Footer(props) {
-	const footerRef = useRef();
-	const [footerSpace, setFooterSpace] = useState(0);
-	const calculateSpace = () => {
-		const position = footerRef && footerRef.current.getBoundingClientRect();
-		if (!position)
-			return;
-		if (((position.top + position.height) < window.innerHeight)) {
-			// Push down the footer when its not at the bottom of screen
-			const outputSpace = window.innerHeight - (position.top + position.height);
-			if(footerSpace !== outputSpace) {
-				setFooterSpace(outputSpace)
-			}
-		}
+  /* If app-container is smaller than the window height, 
+       fix Footer to the bottom of app-container and add padding to app-container
+     If app is bigger than the window height, 
+       just set Footer positioning to initial and remove padding */
 
-		// Reset Footer extra offset to zero
-		else if ((position.top > window.innerHeight) && footerSpace !== 0 ) {
-			setFooterSpace(0);
-		}
-	}
-	useEffect(calculateSpace)
-	const ConditionalSpace = () => (<div style={{ height: footerSpace }}/>)
+  const [fixedToBottom, setFixedToBottom] = useState(false)
+
+  const calculatePosition = () => {
+    let appHeight = document.getElementById('app-container').getBoundingClientRect().height
+    let footerHeight = document.getElementsByTagName('footer')[0].getBoundingClientRect().height
+    let windowHeight = window.innerHeight
+
+    if (appHeight <= windowHeight) {
+      document.getElementById('app-container').setAttribute('style', `padding-bottom: ${footerHeight}px`)
+      setFixedToBottom(true)
+    } else {
+      document.getElementById('app-container').setAttribute("style", "padding-bottom: 0px")
+      setFixedToBottom(false)
+    }
+  }
+
+  useEffect(calculatePosition)
+  window.addEventListener('resize', calculatePosition)
+  
+  let conditionalStyles =
+    fixedToBottom ?
+    {bottom: 0, position: 'absolute'} :
+    {bottom: 'auto', position: 'initial'}
+
 	return (
 		<>
-		<ConditionalSpace />
-		<div className="Footer" ref={footerRef} >
+		<footer className="Footer" style={conditionalStyles}>
 			<div className="footerColumn">
 				<div><h1>Assembl(i)</h1></div>
 				<div><Link to="/description">Description / Mission</Link></div>
@@ -46,12 +53,12 @@ function Footer(props) {
 				<div><Link to="/phone">Phone</Link></div>
 				<div><Link to="/email">Email</Link></div>
 				<div className="footerMediaIcons">
-					<a href="https://facebook.com"><img className="footerMediaIcon" src="/img/FACEBOOK.png" /></a>
-					<a href="https://twitter.com"><img className="footerMediaIcon" src="/img/TWITTER.png" /></a>
-					<a href="https://instagram.com"><img className="footerMediaIcon" src="/img/INSTAGRAM.png" /></a>
+					<a href="https://facebook.com"><img className="footerMediaIcon" src="/img/FACEBOOK.png" alt='facebook icon'/></a>
+					<a href="https://twitter.com"><img className="footerMediaIcon" src="/img/TWITTER.png" alt='twitter icon'/></a>
+					<a href="https://instagram.com"><img className="footerMediaIcon" src="/img/INSTAGRAM.png" alt='instagram icon'/></a>
 				</div>
 			</div>
-		</div>
+		</footer>
 		</>
 	)
 }
