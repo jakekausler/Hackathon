@@ -7,5 +7,60 @@
     "imageURL": "https://www.whatsappprofiledpimages.com/wp-content/uploads/2018/07/funny-profile-pic46-300x300.jpg",
     "phone": "888-888-8888",
     "website": "https://www.morganhuegel.com"
+  },
+  "projectStatus": {
+    "needs": [
+      {
+        "position": "ditch digger",
+        "fulfilled": false
+      },
+      {
+        "position": "car driver",
+        "fulfilled": false
+      },
+      {
+        "position": "network dude/dudette",
+        "fulfilled": true
+      },
+      {
+        "position": "designer",
+        "fulfilled": true
+      },
+      {
+        "position": "cheerleader",
+        "fulfilled": false
+      }
+    ],
+    "funding": {
+      "goal": 500,
+      "granted": 124.1
+    },
+    "tasks": [
+      {
+        "title": "Receive funding",
+        "description": "just need some dinero, yo!",
+        "completed": false
+      },
+      {
+        "title": "Find target to help",
+        "description": "Looking for some families in need in the Durham area",
+        "completed": true
+      },
+      {
+        "title": "Gather volunteers",
+        "description": "Assemble the troops!",
+        "completed": true
+      },
+      {
+        "title": "Gather supplies",
+        "description": "Trip to walmart, but we need some dinero first :(",
+        "completed": false
+      },
+      {
+        "title": "Assign Roles",
+        "description": "what are we each gonna do?",
+        "completed": true
+      }
+    ]
   }
 }
