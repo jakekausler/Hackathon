@@ -5,3 +5,7 @@
 .filled {
     list-style: disc;
 }
+
+.Sidebar {
+	margin-left: -20px;
+}

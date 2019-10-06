@@ -13,7 +13,7 @@ import Sidebar from './Sidebar/Sidebar'
 export default function UserPage(props) {
 	return (
 		<div className="UserPage">
-			<h2>Hello [User]</h2>
+			<h2>Hello Jake</h2>
 			<div className="MainUserPage">
 			<div className="main">
 				<ActiveAssembliPoints Active={data.active} />
