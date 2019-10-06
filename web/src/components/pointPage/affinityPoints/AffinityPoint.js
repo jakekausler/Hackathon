@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function AffinityPoint (props) {
 	let needs = props.Point.needs.map(function(need) {
@@ -8,7 +9,7 @@ export default function AffinityPoint (props) {
 	})
 	let users = props.Point.users.map(function(user) {
 		return (
-			<li><a href="/user">{user.name}</a></li>
+			<li><Link to="/user">{user.name}</Link></li>
 		)
 	})
 	return (
