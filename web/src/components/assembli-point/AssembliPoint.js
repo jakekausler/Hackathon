@@ -42,8 +42,8 @@ export default function ProjectDetails(props) {
     <div style={{position: 'relative'}}>
       {leaves}
       {/* TODO: Replace with same dimension but smaller file sized element. */}
-      <img src='svg/centerCircle.svg' style={circle}/>
-      <img src={props.img} style={center}/>
+      {<img src='svg/centerCircle.svg' style={circle}/>}
+      {/*<img src={props.img} style={center}/>*/}
     </div>
   );
 }

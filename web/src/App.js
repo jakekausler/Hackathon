@@ -7,6 +7,7 @@ import muiTheme from './theme/muiTheme';
 import Home from './components/home/Home';
 import PointPage from './components/pointPage/PointPage';
 import UserPage from './components/UserPage/UserPage';
+import UserProfile from './components/UserProfile/UserProfile';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
@@ -50,6 +51,7 @@ class App extends React.Component {
           <Route path='/register-affinity' component={AffinityPage}/>
           <Route path='/point-page' component={PointPage}/>
           <Route path='/user-page' component={UserPage}/>
+          <Route path='/user-profile' component={UserProfile}/>
           {/* <Route path='/profile/:id' component={UserProfile}/> */}
           <Route exact path='/' component={Home}/>
           <Route path='*' component={PageDoesNotExist}/>

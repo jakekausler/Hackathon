@@ -1,0 +1,29 @@
+.UserProfileInfo img {
+	height: 256px;
+}
+
+.profileDetails {
+	padding: 0 12px;
+}
+
+.profileDetails p {
+	margin: 0;
+	margin-bottom: 4px;
+}
+
+.profileDetails .label {
+	font-weight: 900;
+}
+
+.UserProfileInfo h3 {
+	display: block;
+}
+
+.profileInfoContent {
+	display: flex;
+	padding: 12px;
+}
+
+.profileSection {
+	padding: 12px;
+}

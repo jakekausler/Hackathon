@@ -1,12 +1,16 @@
-label {
+.UserProfile .Message label {
     display: block;
 }
 
-textarea {
-    border: none;
+.UserProfile .Message form {
+    margin-top: 20px;
 }
 
-form {
-    margin-top: 40px;
+.UserProfile .Message button {
+	background: var(--color_dark_orange);
+	border: none;
+	padding: 8px;
+	color: white;
+	width: 100px;
+	cursor: pointer;
 }
-

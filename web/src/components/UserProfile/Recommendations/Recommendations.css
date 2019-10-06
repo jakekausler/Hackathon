@@ -1,0 +1,27 @@
+.Recommendation {
+	background: var(--color_dark_blue);
+	color: white;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.Recommendations {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	margin-bottom: 12px;
+	margin-top: 12px;
+	max-height: 500px;
+}
+
+.Recommendation h4 {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.Recommendation p {
+	margin: 0;
+}
