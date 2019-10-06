@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import './Footer.css'
 
 function Footer(props) {
+  /* If app-container is smaller than the window height, 
+       fix Footer to the bottom of app-container and add padding to app-container
+     If app is bigger than the window height, 
+       just set Footer positioning to initial and remove padding */
+
   const [fixedToBottom, setFixedToBottom] = useState(false)
 
   const calculatePosition = () => {
@@ -19,7 +24,7 @@ function Footer(props) {
       setFixedToBottom(false)
     }
   }
-  
+
   useEffect(calculatePosition)
   window.addEventListener('resize', calculatePosition)
   
