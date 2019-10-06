@@ -27,3 +27,14 @@
 .Assembler-profile address {
   display: flex;
 }
+
+.Assembler-profile button {
+  background: var(--color_dark_orange);
+  border: none;
+  padding: 8px;
+  color: white;
+}
+
+.Assembler-profile button:hover {
+  background: var(--color_light_orange);
+}

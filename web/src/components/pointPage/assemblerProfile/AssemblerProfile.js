@@ -11,7 +11,7 @@ export default function AssemblerProfile (props) {
       </div>
 
       <div className='col2'>
-        <h3>Assembler Profile:</h3>
+        <h3>Assembler Profile</h3>
         <address>
           <ul>
             <li>Name:</li>

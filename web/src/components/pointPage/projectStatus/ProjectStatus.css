@@ -1,22 +1,24 @@
 .needs-list {
   display: flex;
   flex-direction: row;
-  background-color: rgb(245, 245, 245);
+  background-color: var(--color_light_blue);
+  margin-top: 10px;
+  padding: 0px 10px;
 }
 
 .needs-list ul {
   list-style: none;
   padding: 0;
   flex-basis: 50%;
+  margin: 0;
 }
 .needs-list li {
   padding-left: 10px;
 }
 
-.needs-list .needs-fulfilled {
-}
-.needs-list .needs-unfulfilled {
-  
+.needs-list img, .task-progress img {
+  width: 12px;
+  margin-right: 10px;
 }
 
 .task-progress ul {
@@ -26,12 +28,13 @@
 
 .goal-progress {
   display: flex;
-  background-color: rgb(245, 245, 245);
-  margin-top: 10px;
+  background-color: var(--color_light_blue);
 }
 .task-progress {
   flex-basis: 50%;
+  padding: 0px 10px;
 }
 .funding-goal {
   flex-basis: 50%;
+  padding: 0px 10px;
 }

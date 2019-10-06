@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 import './Footer.css'
 
-import facebook from './images/facebook.png'
-import twitter from './images/twitter.png'
-import instagram from './images/instagram.png'
+import facebook from './../../images/FACEBOOK.png'
+import twitter from './../../images/TWITTER.png'
+import instagram from './../../images/INSTAGRAM.png'
 
 function Footer() {
 	const footerRef = useRef();
