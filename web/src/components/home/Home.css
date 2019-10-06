@@ -9,7 +9,7 @@
   border-color: var(--color_dark_orange);
   font-size: 2em;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
 .Homepage-button:hover, .Homepage-button:focus {

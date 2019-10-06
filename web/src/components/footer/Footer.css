@@ -9,6 +9,7 @@
   position: absolute;
   bottom: 0;
   min-width: 100vw;
+  box-sizing: border-box;
 }
 
 .Footer h1 {
