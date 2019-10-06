@@ -15,9 +15,18 @@ const About = ( props ) => {
                     mollit anim id est laborum.
                 </p>
             <section>
-                <div className="companyContact">
-                    <h4></h4>
-                </div>
+                    <div>
+                        <span><b>Leadership555</b></span>
+                    </div>
+                    <div>
+                        <span>000 Leadership Way</span>
+                    </div>
+                    <div>
+                        <span>Leadership, New York, USA</span>
+                    </div>
+                    <div>
+                        <span>+1 (000)-000-0000</span>
+                    </div>
             </section>
         </div>
     )

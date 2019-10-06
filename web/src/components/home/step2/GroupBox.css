@@ -1,0 +1,62 @@
+.groupbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.groupbox-row1, .groupbox-row2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .groupbox-row1, .groupbox-row2 {
+    flex-direction: column;
+  }
+  .groupbox-row1 {
+    margin-bottom: 0;
+  }
+  a.groupbox, a.groupbox:link, a.groupbox:visited {
+    color: black;
+    background: white;
+  }
+}
+
+.groupbox {
+  flex-basis: 25%;
+  background: var(--color_dark_blue);
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.groupbox:link, .groupbox:visited {
+  color: white;
+}
+
+.groupbox:hover {
+  background: var(--color_light_blue);
+}
+
+.groupbox .icon {
+  border-radius: 50%;
+  background-color: var(--color_dark_orange);
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.groupbox .icon img {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  top: 12.5%;
+  left: 12.5%;
+}
+
+.groupbox-header {
+  font-size: 20px;
+  text-decoration: underline;
+}

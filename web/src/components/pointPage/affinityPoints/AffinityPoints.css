@@ -1,0 +1,58 @@
+.affinityPoint .icon {
+  border-radius: 50%;
+  background-color: var(--color_dark_orange);
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.affinityPoint .icon img {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  top: 12.5%;
+  left: 12.5%;
+}
+
+.affinityPoint h4 {
+	color: var(--color_dark_blue);
+	display: inline;
+	margin: auto 12px;
+}
+
+.affinityPointHeading {
+	margin-top: 12px;
+	display: flex;
+}
+
+.affinityPoints {
+	display: flex;
+}
+
+.affinityPoint {
+	display: inline;
+	justify-content: space-between;
+	width: 33%;
+}
+
+.affinityPoint .signup {
+  background: var(--color_dark_orange);
+  border: none;
+  padding: 8px;
+  color: white;
+  width: 100px;
+}
+
+@media (max-width: 767px) {
+	.affinityPoints {
+		flex-direction: column;
+	}
+	.affinityPoint {
+		width: 100%;
+	}
+	.affinityPoint .signup-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

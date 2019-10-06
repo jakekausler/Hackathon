@@ -32,37 +32,53 @@ h1 {
 	display: inline;
 }
 
-table {
+.header table {
+	display: block;
 	border: none;
 	border-collapse: collapse;
 }
 
-table td {
+.header table td {
 	padding-left: 5px;
 	padding-right: 5px;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 }
 
-table td:first-child {
+.header table td:first-child {
 	border-left: none;
 }
 
-table td:last-child {
+.header table td:last-child {
 	border-right: none;
 }
 
-a, a:link, a:visited {
+.header a, a:link, a:visited {
 	color: black;
 	text-decoration: none;
 }
 
-a.login {
+.header a.login {
 	padding: 6px 12px;
-	background: purple;
+	background: var(--color_dark_orange);
 	color: white;
 	margin-left: 8px;
 }
-a.login:hover {
-	background: blue;
+.header a.login:hover {
+	background: var(--color_light_orange);
+}
+
+.assembliLogo {
+	display: inline;
+	height: 48px;
+}
+
+@media (max-width: 767px) {
+	.assembliLogo {
+		height: 32px;
+	}
+	.header .login {
+		display: block;
+		float: right;
+	}
 }

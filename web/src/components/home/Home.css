@@ -2,27 +2,46 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.Homepage-button {
+  color: white;
+  background-color: var(--color_dark_orange);
+  border-radius: 0.05em;
+  border-color: var(--color_dark_orange);
+  font-size: 2em;
+  display: block;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Homepage-button:hover, .Homepage-button:focus {
+  cursor: pointer;
+  background-color: var(--color_light_orange);
+}
+
+.step-box {
+  padding: 10px;
+  text-align: justify;
+}
+.step-box-accent {
+  background: var(--color_dark_blue);
   color: white;
 }
-
-.App-link {
-  color: #09d3ac;
+.step-box-accent h3 {
+  color: var(--color_dark_orange);
+}
+.step-image-profile {
+  float: left;
+  max-height: 200px;
+  margin: 10px;
+}
+.step-image-assembli {
+  float: left;
+  max-height: 200px;
+  margin: 10px;
 }
 
-.Step-label {
-  border-radius: 1em;
-  border: .1em solid #3fb6f1;
-  padding: .2em;
+.step-left-label {
+  text-align: left;
+}
+.step-right-label {
+  text-align: right;
 }

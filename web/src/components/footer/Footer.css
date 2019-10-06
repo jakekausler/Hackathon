@@ -1,0 +1,35 @@
+.Footer {
+	margin-top: 12px;
+	background: var(--color_dark_gray);
+	color: white;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.Footer h1 {
+	text-decoration: underline;
+}
+
+.Footer a, .Footer a:link, .Footer a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.footerColumn {
+	display: inline;
+	width: 30%;
+	word-wrap: break-word;
+}
+
+.footerMediaIcon {
+	height: 32px;
+	margin: 2px;
+}
+@media (max-width: 767px) {
+	.footerMediaIcon {
+		height: 20px;
+		margin: 4px;
+	}
+}
