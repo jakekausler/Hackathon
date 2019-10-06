@@ -14,16 +14,14 @@ export default function UserPage(props) {
 	return (
 		<div className="UserPage">
 			<h2>Hello Jake</h2>
-			<div className="MainUserPage">
+			<div className="side">
+				<Sidebar />
+			</div>
 			<div className="main">
 				<ActiveAssembliPoints Active={data.active} />
 				<SavedAssembliPoints Saved={data.saved} />
 				<AssembliPointInfo Urgent={data.urgent} Suggested={data.suggested} />
 				<Invite />
-			</div>
-			<div className="side">
-				<Sidebar />
-			</div>
 			</div>
 		</div>
 	);

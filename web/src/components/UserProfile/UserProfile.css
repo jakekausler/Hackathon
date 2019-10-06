@@ -24,6 +24,12 @@
 	padding: 12px;
 }
 
+@media (max-width: 767px) {
+	.profileInfoContent {
+		flex-direction: column;
+	}
+}
+
 .profileSection {
 	padding: 12px;
 }

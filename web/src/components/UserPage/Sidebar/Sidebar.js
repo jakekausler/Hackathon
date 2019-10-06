@@ -5,35 +5,38 @@ import './Sidebar.css'
 export default function Sidebar() {
 	return (
 		<div className="Sidebar">
-			<div>
-				<ul>
-					<li className="undecorated"><a href="#">Messages&nbsp;&nbsp;&nbsp;( {4} )</a></li>
-					<li className="undecorated"><a href="#">Invites&nbsp;&nbsp;&nbsp;( {1} )</a></li>
-					<li className="undecorated"><a href="#">Projects&nbsp;&nbsp;&nbsp;( {3} )</a></li>
-				</ul>
+			<div className="dropdown">
+				<button className="dropbtn">Info</button>
+				<div className="dropdown-content">
+					<a href="#">Messages&nbsp;&nbsp;&nbsp;( {4} )</a>
+					<a href="#">Invites&nbsp;&nbsp;&nbsp;( {1} )</a>
+					<a href="#">Projects&nbsp;&nbsp;&nbsp;( {3} )</a>
+				</div>
 			</div>
-			<div>
-				<ul>
-					<li className="undecorated">Account</li>
-						<ul>
-							<li className="filled"><a href="#">Edit Profile</a></li>
-							<li className="filled"><a href="#">Change Password</a></li>
-							<li className="filled"><a href="#">Invite Friends</a></li>
-						</ul>
-					<li className="undecorated">Affinity Groups</li>
-						<ul>
-							<li className="filled"><a href="#">Prayer</a></li>
-							<li className="filled"><a href="#">Logistics</a></li>
-							<li className="filled"><a href="#">Equipping</a></li>
-							<li className="filled"><a href="#">Update Groups</a></li>
-						</ul>
-					<li className="undecorated">Teams</li>
-						<ul>
-							<li className="filled"><a href="#">Home Church</a></li>
-							<li className="filled"><a href="#">NC</a></li>
-							<li className="filled"><a href="#">Create a Team</a></li>
-						</ul>
-				</ul>
+			<div className="dropdown">
+				<button className="dropbtn">Account</button>
+				<div className="dropdown-content">
+					<a href="#">Edit Profile</a>
+					<a href="#">Change Password</a>
+					<a href="#">Invite Friends</a>
+				</div>
+			</div>
+			<div className="dropdown">
+				<button className="dropbtn">Affinity Groups</button>
+				<div className="dropdown-content">
+					<a href="#">Prayer</a>
+					<a href="#">Logistics</a>
+					<a href="#">Equipping</a>
+					<a href="#">Update Groups</a>
+				</div>
+			</div>
+			<div className="dropdown">
+				<button className="dropbtn">Teams</button>
+				<div className="dropdown-content">
+					<a href="#">Home Church</a>
+					<a href="#">NC</a>
+					<a href="#">Create a Team</a>
+				</div>
 			</div>
 		</div>
 	);
