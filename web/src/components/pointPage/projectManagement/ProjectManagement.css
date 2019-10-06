@@ -1,0 +1,56 @@
+
+.ProjectManagement {
+}
+
+.ProjectManagement .visible {
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+	max-height: 300px;
+	overflow: auto;
+	background: var(--color_dark_blue);
+	color: white;
+}
+.ProjectManagement .hidden {
+	display: none;
+}
+
+.ProjectManagement table {
+	border: none;
+	border-collapse: collapse;
+}
+
+.ProjectManagement table td {
+	padding-left: 5px;
+	padding-right: 5px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.ProjectManagement table td:first-child {
+	border-left: none;
+}
+
+.ProjectManagement table td:last-child {
+	border-right: none;
+}
+
+.ProjectManagement .tabs {
+	margin-top: 4px;
+}
+.ProjectManagement .tabs:hover {
+	cursor: pointer;
+}
+
+.message, .file, .team {
+	border-bottom: 1px solid black;
+	cursor: pointer;
+}
+
+.message .from, .file .name, .team .name {
+	margin-top: 12px;
+}
+
+.message .subject, .message .content, .file .name, .file .description, .team .name, .team .description {
+	margin-bottom: 12px;
+}
