@@ -8,14 +8,14 @@ export default function NeedsList(props) {
     if(need.fulfilled) {
       metNeeds.push(
         <li key={'need' + i}>
-          <img src="/img/checked.png" />  {/*<---- CUSTOM LIST ICON HERE*/}
+          <img src="/img/checked.png" alt='checked box'/>  {/*<---- CUSTOM LIST ICON HERE*/}
           {need.position}
         </li>
       )
     } else {
       unmetNeeds.push(
         <li key={'need' + i}>
-          <img src="/img/unchecked.png" />  {/*<---- CUSTOM LIST ICON HERE*/}
+          <img src="/img/unchecked.png" alt='unchecked box'/>  {/*<---- CUSTOM LIST ICON HERE*/}
           {need.position}
         </li>
       )

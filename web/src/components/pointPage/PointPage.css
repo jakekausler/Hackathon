@@ -1,6 +1,7 @@
 .Point-page-section {
   border-top: 2px solid gray;
   padding: 20px;
+  margin: 0 20px 0 20px;
 }
 
 .Point-page-section .assembli {

@@ -8,8 +8,8 @@ export default function TaskProgress (props) {
         {props.data.projectStatus.tasks.map( (task, i) => {
           return task.completed ?
           //Replace these span characters with checked or unchecked boxes
-            <li key={'task' + i}><img src="/img/checked.png" />{task.title}</li> :
-            <li key={'task' + i}><img src="/img/unchecked.png" />{task.title}</li>
+            <li key={'task' + i}><img src="/img/checked.png" alt='completed task'/>{task.title}</li> :
+            <li key={'task' + i}><img src="/img/unchecked.png" alt='uncompleted task'/>{task.title}</li>
         })}
       </ul>      
     </div>

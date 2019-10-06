@@ -7,7 +7,7 @@ export default function UserProfileInfo(props) {
         <div className="profileSection UserProfileInfo">
             <h3>{props.Info.name}'s Profile</h3>
             <div className="profileInfoContent">
-                <div className="profileImageDiv"><img src="/img/profileimage.jpg" alt="User profile photo"/></div>
+                <div className="profileImageDiv"><img src="/img/profileimage.jpg" alt="User profile pic"/></div>
                 <div className="profileDetails">
                     <p><span className="label">Country:</span> {props.Info.country}</p>
                     <p><span className="label">Language(s) Spoken:</span> {props.Info.languages.join(", ")}</p>
